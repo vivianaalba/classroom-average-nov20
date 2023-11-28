@@ -1,4 +1,3 @@
-
 // Import student data
 import data from './studentData.js';
 console.log(data);
