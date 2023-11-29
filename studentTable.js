@@ -5,11 +5,11 @@ console.log(data);
 // Create function that makes a table based on student data
 function renderStudentTable(table, data) {
     for (let i = 0; i < data.length; i++) {
-        // Create a new row in the specified table
+        // Create a new row element in the table
         const newStudent = document.createElement('tr');
         newStudent.innerHTML = `<td>${data[i].id}</td><td>${data[i].name}</td><td>${data[i].address}</td><td>${data[i].averageGrade}</td>`;
         
-        // Append the new row to the table
+        // Append the new row to the specified table
         table.appendChild(newStudent);
     }
 }
@@ -24,8 +24,3 @@ renderStudentTable(table, data);
 // Implement an onchange event handler that calls a function named updateGrade when 
 // a student's average grade is modified. This function will update the student's grade
 // and recalculate the classroom average.
-
-function updateGrade(inputElement) {
-    const inputValue = inputElement.value;
-    console.log(inputValue);
-}
