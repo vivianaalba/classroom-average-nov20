@@ -12,6 +12,4 @@ function calculateClassroomAverage(data) {
     }
 }
 
-calculateClassroomAverage(data);
-
 export default calculateClassroomAverage;

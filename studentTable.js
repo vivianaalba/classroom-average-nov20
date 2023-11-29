@@ -21,12 +21,6 @@ function renderStudentTable(table, data) {
 // Get the table element by ID
 let table = document.getElementById("student-table");
 
-// Call the function with the table element and data
-renderStudentTable(table, data);
-
-// implement event handler to recalculate class average when a student average has changed
-table.addEventListener("change", updateGrade)
-
 
 // Function to update a student's grade and recalculate the classroom average
 function updateGrade(event) {
@@ -46,4 +40,4 @@ function updateGrade(event) {
 }
 
 // export
-export default updateGrade;
+export {updateGrade, renderStudentTable};
